@@ -13,6 +13,8 @@ public class CheckVowel {
             System.out.println("String did not contain vowel");
         }
 
+        noOfVowelAndConsonent(str);
+
     }
     public static boolean vowel(String str){
         int n=str.length();
@@ -32,5 +34,23 @@ public class CheckVowel {
         else {
             return false;
         }
+    }
+
+    static public void noOfVowelAndConsonent(String str){
+        int n=str.length();
+        int vow=0;
+        int cons=0;
+        for(int i=0;i<n;i++)
+        {
+            if(str.charAt(i)=='a'||str.charAt(i)=='e'||str.charAt(i)=='i'||str.charAt(i)=='o'||str.charAt(i)=='u')
+            {
+                vow++;
+            }
+            else {
+                cons++;
+            }
+        }
+        System.out.println("no of vowels are : "+ vow);
+        System.out.println("no of consonant are : "+ cons);
     }
 }

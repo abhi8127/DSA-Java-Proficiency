@@ -24,10 +24,10 @@ public class Sqrtx69 {
         while (start <= end) {
 
             int mid = start + (end - start) / 2;
-            if (mid * mid == x) {
+            if ((long)mid * mid == x) {
                 return mid;
             }
-            else if (mid * mid > x) {
+            else if ((long)mid * mid > x) {
                 end = mid - 1;
             }
             else

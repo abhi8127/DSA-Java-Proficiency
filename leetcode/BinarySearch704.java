@@ -11,7 +11,7 @@ You must write an algorithm with O(log n) runtime complexity.
 public class BinarySearch704 {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        System.out.println("Enter the size of the array");
+        System.out.println("Enter the size of the Array");
         int n=sc.nextInt();
         int[] arr=new int[n];
         System.out.println("Enter the element in the array in ascending order");
